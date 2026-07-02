@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Discovery & Engine Profiler</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🥀Engine Discovery Dashboard🥀</h1>
+        <div class="metrics-panel">
+            <p>Network Latency: <span id="latency-metric">0ms</span></p>
+            <p>Queue Status: <span id="queue-metric" class="status-idle">Idle</span></p>
+        </div>
+    </header>
+
+    <main>
+        <section class="controls">
+            <input type="text" id="search-input" placeholder="Type a title(eg: Naruto, DragonBall)...">
+            <button id="search-btn">Fetch Stream</button>
+        </section>
+
+        <section id="tags-filter-grid" class="tags-container">
+            <button class="tag-btn active" data-query="naruto">Naruto</button>
+            <button class="tag-btn" data-query="ghibli">Studio Ghibli</button>
+            <button class="tag-btn" data-query="dragonball">Dragonball</button>
+            <button class="tag-btn" data-query="invalid_endpoint_test">BLEH</button>
+        </section>
+
+        <section id="results-display-matrix" class="card-matrix"></section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

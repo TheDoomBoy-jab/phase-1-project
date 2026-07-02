@@ -1,0 +1,143 @@
+body {
+	background-image: url('cozy.jpg');
+    background-size: center;
+    background-position: left;
+    background-size: cover;
+
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    color: #f8fafafc;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 30px;
+
+}
+
+h1{
+	color: white;
+	-webkit-text-stroke: 1.5px #0b0f19;
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #1e293b;
+    padding-bottom: 10px;
+
+}
+
+.metrics-panel {
+	-webkit-text-stroke: 1.5px #0b0f19;
+    margin: 5px 0;
+    font-family: monospace;
+    color: #10b981;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background: #1e293b;
+    color: white;
+}
+
+button {
+    padding: 10px 24px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background: #38bdf8;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tags-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.tag-btn {
+    background: #334155;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.tag-btn.active {
+    background: #38bdf8;
+    color: black;
+}
+
+.card-matrix {
+	font-family: Poppins, sans-serif;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+    gap: 20px;
+    -webkit-text-stroke: 0.5px #0b0f19;
+}
+
+.card {
+    background: #1e293b;
+    border-color: 30px solid #0b0f19;
+    
+    overflow: hidden;
+    box-shadow: -2px 4px 6px -1px #000;
+    transition: all 0.4s ease-in-out;
+    border: 5px solid black;
+}
+
+
+.card:hover {
+    transform: translateY(-4px);
+    transform: translateX(-4px);
+    border-color: #indianred;
+    box-shadow: 0 10px 20px darkred;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+}
+
+.card-info {
+	font-size: 12px;
+    padding: 15px;
+    background-color: #ffffff;
+    background-image: url('idk.jpeg');
+
+}
+
+.card-info h3 {
+   margin: 10px 10px 10px 0;
+    font-size: 13px;
+    line-height: 1.4;
+    white-space: nowrap;     
+    overflow: hidden;        
+    text-overflow: ellipsis; 
+
+    color: white; 
+    font-weight: bold;
+}
+
+.error-box {
+    background: rgba(139, 0, 0, 0.2);
+    border: 1px solid #ef4444;
+    padding: 20px;
+    border-radius: 6px;
+    color: #ef4444;
+    width: 100%;
+}
